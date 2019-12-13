@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Easter Form</title>
+    <link rel="stylesheet" type="text/css" href="Form_Easter.css">
+</head>
+
+
+<body>
+    <h1> Find a year's Easter date </h1>
+    <form action="cgi-bin/Form_Easter.py" method="GET">
+
+    <br><br>
+
+    <label for="YearSelect" class=YearSelect>
+        <strong>Enter a Year:</strong>
+    </label>
+
+    <input type="Year" id="Year" name="Year" min="1" max="9999" class="textbox" maxlength="4" size="4"/>
+    <input type="Submit" value="Select" class="button" /> <br/>
+
+    <br><br><br><br>
+    <p1> <strong> How do you want the <em>date</em> to be displayed ? </strong> </p1> <br><br><br>
+
+    <label2><input type="radio" name="formatmethod" id="numerically" value="numerically"
+    checked="checked" class="formatmethod"/><span class="formatmethodtext"> Numerically <em> (dd/mm/yy) </em> </span>
+    </label2><br/>
+
+    <label2><input type="radio" name="formatmethod" id="verbosely" value="verbosely" checked="checked" class="formatmethod"/>
+    <span class="formatmethodtext">Verbosely</span>
+    </label2><br/>
+
+    <label2><input type="radio" name="formatmethod" id="both" value="both" checked="checked" class="formatmethod"/>
+    <span class="formatmethodtext"> Both</span>
+    </label2><br/>
+
+    </form>
+
+</body>
+</html>
